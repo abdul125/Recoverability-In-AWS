@@ -1,0 +1,14 @@
+write a paragraph or two describing the achievable Recovery Time Objective (RTO) and Recovery Point Objective (RPO) for this Multi-AZ, multi-region database in terms of:
+
+1. Minimum RTO for a single AZ outage:
+    In case of single AZ outage, the failover to a different AZ will occure in a couple of minutes ~30 minutes 
+
+2. Minimum RTO for a single region outage:
+    the minimum RTO for a single region outage is approximately 1 hour since there multiple of actions required datacenter support like On-call staff starts diagnosing issue (~30) and Root cause is discovered (~25 mintues) and creating a replica (~5)
+
+3. Minimum RPO for a single AZ outage:
+    The minimum RPO for a single AZ outage is approximately 7 minutes becuase failover to different AZ.
+    
+4. Minimum RPO for a single region outage:
+    Minimum RPO for a single region outage is majorly based on how often the data is backup. if every 5 hour, then Minimum RPO is
+     5 hours
